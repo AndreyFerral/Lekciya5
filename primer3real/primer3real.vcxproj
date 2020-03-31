@@ -20,11 +20,10 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{966EC00C-6E3A-4EEF-988B-3AAE2046FE53}</ProjectGuid>
+    <ProjectGuid>{29A8F7F6-495B-4B21-B984-0D721D13D917}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>primer3</RootNamespace>
+    <RootNamespace>primer3real</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>primer3</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -149,19 +148,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
-    <ClInclude Include="primer3.h" />
+    <ClInclude Include="primer3real.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="primer3.cpp" />
+    <ClCompile Include="primer3real.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="primer3.rc" />
+    <ResourceCompile Include="primer3real.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="primer3.ico" />
+    <Image Include="primer3real.ico" />
     <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
